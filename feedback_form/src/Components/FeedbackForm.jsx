@@ -9,8 +9,6 @@ const FeedbackForm = () => {
     rating: ''
   });
 
-  const [rating, setRating] = useState('');
-
   const handleChange = (event) => {
     const {name, value} = event.target;
     setFormData({
@@ -21,7 +19,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const confirmationMessage = `
+    const confirmationMessage = `ù
       Name: ${formData.name}
       Email: ${formData.email}
       Feedback: ${formData.feedback}
