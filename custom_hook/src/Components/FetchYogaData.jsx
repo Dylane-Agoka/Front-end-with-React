@@ -12,7 +12,6 @@ const FetchYogaData = () => {
         {data && data.map((e, index) => (
           <li key={index} className='list_data'>
             <h3>{e.name}</h3>
-            <p><strong>Importance: </strong>{e.importance}</p>
             <p><strong>Benefits: </strong>{e.benefits}</p>
             <p><strong>Duration: </strong>{e.time_duration}</p>
           </li>
