@@ -1,10 +1,9 @@
 import React from 'react';
-import useFetch from './UseFetch';
+import fruitData from './Fruit.json';
 import './FetchData.css';
 
 const FetchData = () => {
-  const [data] = useFetch('https://api.npoint.io/9045c260b1565daa9e15');
-  console.log('--- Data from an external api ---')
+  const data = fruitData;
   console.log(data);
   return (
     <>
